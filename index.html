@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #0b0b0c; -webkit-font-smoothing: antialiased; }
+  a { color: #e8b338; text-decoration: none; }
+  a:hover { color: #ffd479; }
+  ::selection { background: #e8b338; color: #0b0b0c; }
+</style>
+</helmet>
+<div style="background:#0b0b0c;color:#f2f0ec;font-family:Archivo,Helvetica,Arial,sans-serif;min-height:100vh">
+
+  <header style="position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 40px;background:rgba(11,11,12,0.86);backdrop-filter:blur(12px);border-bottom:1px solid #232326">
+    <div style="display:flex;align-items:center;gap:14px">
+      <img src="assets/rr-logo.webp" alt="Pittsburgh Ruff Ryders logo" style="width:46px;height:46px;object-fit:contain" />
+      <div style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-family:'Archivo Black',Archivo,sans-serif;font-size:15px;letter-spacing:0.14em;text-transform:uppercase">Ruff Ryders</span>
+        <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#8e8b84">Pittsburgh, PA</span>
+      </div>
+    </div>
+    <nav style="display:flex;align-items:center;gap:32px">
+      <a href="#about" style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#d9d6d0" style-hover="color:#e8b338">About</a>
+      <a href="#programs" style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#d9d6d0" style-hover="color:#e8b338">Programs</a>
+      <a href="#events" style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#d9d6d0" style-hover="color:#e8b338">Events</a>
+      <a href="#gallery" style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#d9d6d0" style-hover="color:#e8b338">Gallery</a>
+      <a href="#contact" style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#d9d6d0" style-hover="color:#e8b338">Contact</a>
+      <a href="#donate" style="padding:11px 22px;background:#e8b338;color:#0b0b0c;font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase" style-hover="background:#ffd479;color:#0b0b0c">Donate</a>
+    </nav>
+  </header>
+
+  <section style="position:relative;min-height:640px;display:flex;align-items:flex-end;overflow:hidden">
+    <img src="assets/hero-overlook.jpg" alt="Pittsburgh Ruff Ryders members overlooking downtown Pittsburgh" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%" />
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,0.78) 0%,rgba(11,11,12,0.5) 34%,rgba(11,11,12,0.88) 68%,rgba(11,11,12,0.97) 100%)"></div>
+    <div style="position:relative;padding:0 40px 72px;max-width:1000px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:22px">
+        <span style="width:34px;height:2px;background:#e8b338"></span>
+        <span style="font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#e8b338">Pittsburgh, PA &nbsp;•&nbsp; 501(c)(3) Nonprofit</span>
+      </div>
+      <h1 style="margin:0 0 24px;font-family:'Archivo Black',Archivo,sans-serif;font-size:76px;line-height:0.98;letter-spacing:-0.02em;text-transform:uppercase">Pittsburgh<br />Ruff Ryders</h1>
+      <p style="margin:0 0 36px;max-width:680px;font-size:21px;line-height:1.5;color:#e3e0da;text-wrap:pretty">Uniting Pittsburgh youth, families, and community through free programming, preventive health access, and safe recreational spaces.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a href="#donate" style="padding:17px 32px;background:#e8b338;color:#0b0b0c;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase" style-hover="background:#ffd479">Support Our Mission</a>
+        <a href="#programs" style="padding:17px 32px;border:1px solid #575550;color:#f2f0ec;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase" style-hover="border-color:#e8b338;color:#e8b338">See Our Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="padding:110px 40px;border-bottom:1px solid #1c1c1f">
+    <div style="display:grid;grid-template-columns:minmax(220px,300px) minmax(0,1fr);gap:72px;align-items:start;max-width:1240px;margin:0 auto">
+      <div>
+        <div style="font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#e8b338;margin-bottom:16px">Who We Are</div>
+        <img src="assets/rr-logo.webp" alt="" style="width:132px;height:132px;object-fit:contain;opacity:0.9" />
+      </div>
+      <div>
+        <h2 style="margin:0 0 32px;font-family:'Archivo Black',Archivo,sans-serif;font-size:54px;line-height:1.02;letter-spacing:-0.015em;text-transform:uppercase;max-width:14ch">Built by the Community, for the Community</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px">
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#c9c6c0;text-wrap:pretty">Pittsburgh Ruff Ryders is an all-volunteer 501(c)(3) nonprofit based in Pittsburgh. We serve the general public across Allegheny County, working alongside neighbors who need food, warm supplies, and access to care.</p>
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#c9c6c0;text-wrap:pretty">Every program is run by volunteers and delivered with partners already trusted in the neighborhoods we serve. No paid staff, no membership requirement, no cost to participate.</p>
+          <p style="margin:0;font-size:17px;line-height:1.65;color:#c9c6c0;text-wrap:pretty">Pittsburgh Ruff Ryders Inc. is recognized by the IRS as a 501(c)(3) tax-exempt charitable organization. Our programs are open to the general public regardless of race, color, religion, sex, national origin, age, disability, veteran status, sexual orientation, or gender identity.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;margin-top:56px;background:#232326">
+          <div style="background:#111113;padding:26px 24px">
+            <div style="font-family:'Archivo Black',Archivo,sans-serif;font-size:34px;color:#e8b338;line-height:1">100%</div>
+            <div style="margin-top:8px;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#8e8b84">Volunteer-run</div>
+          </div>
+          <div style="background:#111113;padding:26px 24px">
+            <div style="font-family:'Archivo Black',Archivo,sans-serif;font-size:34px;color:#e8b338;line-height:1">501(c)(3)</div>
+            <div style="margin-top:8px;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#8e8b84">Tax-deductible giving</div>
+          </div>
+          <div style="background:#111113;padding:26px 24px">
+            <div style="font-family:'Archivo Black',Archivo,sans-serif;font-size:34px;color:#e8b338;line-height:1">Free</div>
+            <div style="margin-top:8px;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#8e8b84">Open to the public</div>
+          </div>
+          <div style="background:#111113;padding:26px 24px">
+            <div style="font-family:'Archivo Black',Archivo,sans-serif;font-size:34px;color:#e8b338;line-height:1">500</div>
+            <div style="margin-top:8px;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#8e8b84">People served this year</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs" style="padding:110px 40px;border-bottom:1px solid #1c1c1f">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:54px">
+        <div>
+          <div style="font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#e8b338;margin-bottom:16px">Programs</div>
+          <h2 style="margin:0;font-family:'Archivo Black',Archivo,sans-serif;font-size:54px;line-height:1.02;letter-spacing:-0.015em;text-transform:uppercase">What We Do</h2>
+        </div>
+        <p style="margin:0;max-width:420px;font-size:16px;line-height:1.6;color:#8e8b84">Four programs, run year-round by volunteers and delivered with local partners.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:1px;background:#232326">
+        <article style="background:#111113;padding:38px 32px 42px;display:flex;flex-direction:column;gap:16px" style-hover="background:#17171a">
+          <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#e8b338">01</div>
+          <h3 style="margin:0;font-size:23px;line-height:1.2;font-weight:700">Homeless Feeding Initiative</h3>
+          <p style="margin:0;font-size:15px;line-height:1.65;color:#a8a5a0;text-wrap:pretty">Hot meals and grocery distribution for unsheltered neighbors, delivered with the Greater Pittsburgh Community Food Bank and Light of Life Rescue Mission.</p>
+        </article>
+        <article style="background:#111113;padding:38px 32px 42px;display:flex;flex-direction:column;gap:16px" style-hover="background:#17171a">
+          <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#e8b338">02</div>
+          <h3 style="margin:0;font-size:23px;line-height:1.2;font-weight:700">Winter Care Packages</h3>
+          <p style="margin:0;font-size:15px;line-height:1.65;color:#a8a5a0;text-wrap:pretty">Coats, hats, gloves, socks, and hygiene supplies assembled and handed out directly during the coldest months of the year.</p>
+        </article>
+        <article style="background:#111113;padding:38px 32px 42px;display:flex;flex-direction:column;gap:16px" style-hover="background:#17171a">
+          <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#e8b338">03</div>
+          <h3 style="margin:0;font-size:23px;line-height:1.2;font-weight:700">Preventive Health Access</h3>
+          <p style="margin:0;font-size:15px;line-height:1.65;color:#a8a5a0;text-wrap:pretty">Free screenings and connections to ongoing care through UPMC and Central Outreach Wellness Center, brought to community events instead of waiting rooms.</p>
+        </article>
+        <article style="background:#111113;padding:38px 32px 42px;display:flex;flex-direction:column;gap:16px" style-hover="background:#17171a">
+          <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#e8b338">04</div>
+          <h3 style="margin:0;font-size:23px;line-height:1.2;font-weight:700">Youth &amp; Family Recreation</h3>
+          <p style="margin:0;font-size:15px;line-height:1.65;color:#a8a5a0;text-wrap:pretty">Safe, free recreational gatherings that give Pittsburgh youth and families somewhere to be together, on the road and in the neighborhood.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" style="padding:110px 40px;border-bottom:1px solid #1c1c1f">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#e8b338;margin-bottom:16px">Events</div>
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:48px">
+        <h2 style="margin:0;font-family:'Archivo Black',Archivo,sans-serif;font-size:54px;line-height:1.02;letter-spacing:-0.015em;text-transform:uppercase">What We've Held</h2>
+        <p style="margin:0;max-width:420px;font-size:16px;line-height:1.6;color:#8e8b84">Every event is free and open to the public. New dates are announced on our Facebook page, <a href="https://www.facebook.com/pittsburgh.ruff.ryders">facebook.com/pittsburgh.ruff.ryders</a>.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:#232326">
+        <article style="background:#111113;display:flex;flex-direction:column">
+          <img src="assets/cookout-2026.jpg" alt="Pittsburgh Ruff Ryders Community Cookout flier, Saturday July 18 2026, 12 PM to 5 PM, Riverview Park" style="width:100%;height:auto;display:block" />
+          <div style="padding:28px 26px 32px;display:flex;flex-direction:column;gap:12px">
+            <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#e8b338">July 18, 2026</div>
+            <h3 style="margin:0;font-size:21px;font-weight:700">Community Cookout</h3>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#a8a5a0">Riverview Park, 12 PM to 5 PM. On-site health screenings, bounce house, and free food for everyone, with youth prize giveaways from the Steelers, Pirates, Washington Wild Things, Heinz History Center, Pittsburgh Zoo, Ascend Climbing, Kamin Science Center, Children's Museum, and the Andy Warhol Museum.</p>
+          </div>
+        </article>
+        <article style="background:#111113;display:flex;flex-direction:column">
+          <img src="assets/bookbag-2026.jpg" alt="2026 Back to School Book Bag Giveaway flier, August 15, 12 PM to 5 PM, parking lot next to 312 Ringgold St" style="width:100%;height:auto;display:block" />
+          <div style="padding:28px 26px 32px;display:flex;flex-direction:column;gap:12px">
+            <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#e8b338">August 15, 2026</div>
+            <h3 style="margin:0;font-size:21px;font-weight:700">Back to School Book Bag Giveaway</h3>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#a8a5a0">In the parking lot next to 312 Ringgold St, Pittsburgh, PA 15132, 12 PM to 5 PM. Free bookbags, school supplies, food, games, and music, co-hosted with Noise Makers MC, Black Diamondz MC, Lay-D Noise Makers, Royal Flush MC, and Overlord MC.</p>
+          </div>
+        </article>
+        <article style="background:#111113;display:flex;flex-direction:column">
+          <img src="assets/backpack-giveaway.jpg" alt="Pittsburgh Ruff Ryders Backpack Giveaway flier, Sept 14, 11A until the last backpack, West Park, 638 W Ohio St 15212" style="width:100%;height:auto;display:block" />
+          <div style="padding:28px 26px 32px;display:flex;flex-direction:column;gap:12px">
+            <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#e8b338">September 14, 2025</div>
+            <h3 style="margin:0;font-size:21px;font-weight:700">Backpack Giveaway</h3>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#a8a5a0">West Park, 638 W Ohio St 15212, across from Gus &amp; Yiayia's Icy Ball Stand. Free backpacks from 11 AM until the last one was handed out.</p>
+          </div>
+        </article>
+      </div>
+      <div style="margin-top:36px;padding:26px 28px;background:#111113;border-left:2px solid #e8b338">
+        <h3 style="margin:0 0 10px;font-size:19px;font-weight:700">Winter care package distribution</h3>
+        <p style="margin:0;max-width:760px;font-size:15px;line-height:1.7;color:#a8a5a0;text-wrap:pretty">Volunteers assemble and hand out coats, hats, gloves, socks, and hygiene kits on the street through the coldest months, and deliver donations to Light of Life Rescue Mission. Dates are set as supplies come in. Email us to be notified of the next one.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" style="padding:110px 40px;border-bottom:1px solid #1c1c1f">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#e8b338;margin-bottom:16px">Gallery</div>
+      <h2 style="margin:0 0 48px;font-family:'Archivo Black',Archivo,sans-serif;font-size:54px;line-height:1.02;letter-spacing:-0.015em;text-transform:uppercase">Out in the City</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+        <figure style="grid-column:span 2;margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="aspect-ratio:16/10;overflow:hidden;background:#111113"><img src="assets/handoff.jpg" alt="A volunteer hands a care package to a man downtown at night" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%" /></div>
+          <figcaption style="font-size:13px;color:#8e8b84">Handing out care packages downtown after dark.</figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/light-of-life.jpg" alt="Volunteers carrying donations into Light of Life Rescue Mission" style="width:100%;height:100%;object-fit:cover" /></div>
+          <figcaption style="font-size:13px;color:#8e8b84">Delivering donations to Light of Life Rescue Mission.</figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/packing.jpg" alt="A volunteer filling drawstring bags with supplies" style="width:100%;height:100%;object-fit:cover" /></div>
+          <figcaption style="font-size:13px;color:#8e8b84">Packing bags before a distribution night.</figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/trunk.jpg" alt="Volunteers unloading supplies from a car on a downtown street" style="width:100%;height:100%;object-fit:cover" /></div>
+          <figcaption style="font-size:13px;color:#8e8b84">Unloading supplies on the street.</figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/street-line.jpg" alt="People gathering on a downtown Pittsburgh sidewalk to receive supplies" style="width:100%;height:100%;object-fit:cover" /></div>
+          <figcaption style="font-size:13px;color:#8e8b84">Neighbors gathering on Smithfield Street.</figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/ride.jpg" alt="Riders lined up on motorcycles in downtown Pittsburgh" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%" /></div>
+          <figcaption style="font-size:13px;color:#8e8b84">Riding out through downtown.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="donate" style="padding:110px 40px;background:#e8b338;color:#0b0b0c">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:64px;align-items:center;max-width:1240px;margin:0 auto">
+      <div>
+        <div style="font-size:12px;letter-spacing:0.24em;text-transform:uppercase;margin-bottom:16px;color:#5c4610">Donate</div>
+        <h2 style="margin:0 0 20px;font-family:'Archivo Black',Archivo,sans-serif;font-size:54px;line-height:1.02;letter-spacing:-0.015em;text-transform:uppercase">Every dollar goes back to the block</h2>
+        <p style="margin:0 0 28px;max-width:520px;font-size:17px;line-height:1.65;color:#3d2f0b;text-wrap:pretty">We have no paid staff. Contributions pay for food, winter supplies, and the cost of getting them into people's hands. Gifts are tax-deductible.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;max-width:520px">
+          <div style="display:flex;justify-content:space-between;gap:16px;padding-bottom:10px;border-bottom:1px solid rgba(11,11,12,0.22);font-size:15px"><span>Food and meal distribution</span><span style="font-weight:700">Program costs</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px;padding-bottom:10px;border-bottom:1px solid rgba(11,11,12,0.22);font-size:15px"><span>Winter coats, hats, gloves, hygiene kits</span><span style="font-weight:700">Program costs</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px;font-size:15px"><span>Administration and fundraising</span><span style="font-weight:700">Volunteer, unpaid</span></div>
+        </div>
+        <p style="margin:22px 0 0;max-width:520px;font-size:14px;line-height:1.6;color:#5c4610">Donations are processed through a secure third-party payment processor. Pittsburgh Ruff Ryders does not sell goods or services, and no part of a contribution benefits a private individual.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="font-size:16px;line-height:1.6;color:#3d2f0b">Most gifts run $25 to $100. Any amount is welcome, and so are in-kind donations of coats, hats, gloves, socks, and hygiene supplies.</div>
+        <a href="mailto:stogie@pittsburghrr.org?subject=Donation%20to%20Pittsburgh%20Ruff%20Ryders" style="padding:19px 32px;background:#0b0b0c;color:#e8b338;text-align:center;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase" style-hover="background:#232326">Email Us to Give</a>
+        <div style="padding:14px 16px;border:1px solid #0b0b0c;font-size:15px;line-height:1.6">Cash App: <strong>@ruffryders412</strong></div>
+        <div style="border:1px dashed #8a6c17;padding:14px 16px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;line-height:1.6;color:#5c4610">PLACEHOLDER — send a donation-page link (PayPal Giving Fund, Givebutter, Zeffy) and I'll wire the Give Now button to it. Verify the Cash App handle format before publishing.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="transparency" style="padding:110px 40px;border-bottom:1px solid #1c1c1f">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#e8b338;margin-bottom:16px">Transparency &amp; Governance</div>
+      <h2 style="margin:0 0 48px;font-family:'Archivo Black',Archivo,sans-serif;font-size:54px;line-height:1.02;letter-spacing:-0.015em;text-transform:uppercase">How We Operate</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:#232326">
+        <div style="background:#111113;padding:34px 30px;display:flex;flex-direction:column;gap:14px">
+          <h3 style="margin:0;font-size:19px;font-weight:700">Legal status</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.6;color:#a8a5a0">
+            <div><span style="color:#6d6a65">Legal name</span><br />Pittsburgh Ruff Ryders Inc.</div>
+            <div><span style="color:#6d6a65">Classification</span><br />501(c)(3) tax-exempt charitable organization</div>
+            <div><span style="color:#6d6a65">EIN</span><br />87-4140820</div>
+            <div><span style="color:#6d6a65">State of incorporation</span><br />Pennsylvania</div>
+          </div>
+        </div>
+        <div style="background:#111113;padding:34px 30px;display:flex;flex-direction:column;gap:14px">
+          <h3 style="margin:0;font-size:19px;font-weight:700">Accountability</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.6;color:#a8a5a0">
+            <div>Annual IRS filing: Form 990-N. Available on request.</div>
+            <div>Conflict of interest and non-discrimination policies are on file and available on request.</div>
+            <div>Financial documents: <span style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#8e8b84;border:1px dashed #4a4741;padding:4px 8px;display:inline-block">PLACEHOLDER — link to 990 / annual summary</span></div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:36px;padding:28px 30px;background:#111113;border-left:2px solid #e8b338">
+        <h3 style="margin:0 0 12px;font-size:19px;font-weight:700">Non-discrimination statement</h3>
+        <p style="margin:0;max-width:900px;font-size:15px;line-height:1.7;color:#a8a5a0;text-wrap:pretty">Pittsburgh Ruff Ryders Inc. does not discriminate on the basis of race, color, religion, sex, national origin, ancestry, age, disability, marital status, veteran status, sexual orientation, or gender identity in the delivery of services, in volunteer participation, or in board and organizational governance. Services are provided free of charge to members of the general public and do not require membership in any organization.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" style="padding:110px 40px;border-bottom:1px solid #1c1c1f">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#e8b338;margin-bottom:16px">Privacy</div>
+      <h2 style="margin:0 0 40px;font-family:'Archivo Black',Archivo,sans-serif;font-size:54px;line-height:1.02;letter-spacing:-0.015em;text-transform:uppercase">Privacy Policy</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:44px;max-width:1100px">
+        <div>
+          <h3 style="margin:0 0 12px;font-size:17px;font-weight:700">What we collect</h3>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#a8a5a0;text-wrap:pretty">If you email us, donate, or sign up to volunteer, we collect the name, email address, and any other details you choose to provide. Donations are handled by a third-party payment processor; we never see or store your card number.</p>
+        </div>
+        <div>
+          <h3 style="margin:0 0 12px;font-size:17px;font-weight:700">How we use it</h3>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#a8a5a0;text-wrap:pretty">We use your information only to respond to you, process and acknowledge donations, coordinate volunteer work, and send occasional updates about our programs. We do not sell, rent, or trade personal information.</p>
+        </div>
+        <div>
+          <h3 style="margin:0 0 12px;font-size:17px;font-weight:700">Analytics and cookies</h3>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#a8a5a0;text-wrap:pretty">This site uses standard web analytics to understand how visitors find and use our pages. Analytics data is aggregated and is not used to identify individual visitors. You can block cookies in your browser without losing access to any part of this site.</p>
+        </div>
+        <div>
+          <h3 style="margin:0 0 12px;font-size:17px;font-weight:700">Your choices</h3>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#a8a5a0;text-wrap:pretty">Write to <a href="mailto:stogie@pittsburghrr.org">stogie@pittsburghrr.org</a> at any time to request a copy of what we hold about you, correct it, unsubscribe, or have it deleted. This site is not directed to children under 13, and we do not knowingly collect their information.</p>
+        </div>
+      </div>
+      <div style="margin-top:32px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:#6d6a65">Last updated: PLACEHOLDER — set the date this policy is published.</div>
+    </div>
+  </section>
+
+  <footer id="contact" style="padding:100px 40px 48px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:56px;max-width:1240px;margin:0 auto">
+      <div>
+        <img src="assets/rr-logo.webp" alt="Pittsburgh Ruff Ryders logo" style="width:64px;height:64px;object-fit:contain;margin-bottom:20px" />
+        <div style="font-family:'Archivo Black',Archivo,sans-serif;font-size:17px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px">Pittsburgh Ruff Ryders</div>
+        <div style="font-size:14px;line-height:1.7;color:#8e8b84">Pittsburgh Ruff Ryders Inc.<br />A Pennsylvania nonprofit corporation<br />501(c)(3) tax-exempt charitable organization</div>
+      </div>
+      <div>
+        <div style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#e8b338;margin-bottom:18px">Contact</div>
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:15px;color:#c9c6c0">
+          <a href="mailto:stogie@pittsburghrr.org">stogie@pittsburghrr.org</a>
+          <a href="tel:+14127280040">(412) 728-0040</a>
+          <span style="line-height:1.6">901 Western Ave<br />Pittsburgh, PA 15233</span>
+          <a href="https://www.facebook.com/pittsburgh.ruff.ryders">facebook.com/pittsburgh.ruff.ryders</a>
+          <span style="font-size:14px;color:#8e8b84">Serving Allegheny County and the City of Pittsburgh</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#e8b338;margin-bottom:18px">Explore</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+          <a href="#about" style="color:#c9c6c0" style-hover="color:#e8b338">About</a>
+          <a href="#programs" style="color:#c9c6c0" style-hover="color:#e8b338">Programs</a>
+          <a href="#events" style="color:#c9c6c0" style-hover="color:#e8b338">Events</a>
+          <a href="#gallery" style="color:#c9c6c0" style-hover="color:#e8b338">Gallery</a>
+          <a href="#transparency" style="color:#c9c6c0" style-hover="color:#e8b338">Transparency &amp; governance</a>
+          <a href="#privacy" style="color:#c9c6c0" style-hover="color:#e8b338">Privacy policy</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#e8b338;margin-bottom:18px">Get Involved</div>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.6;color:#8e8b84">Volunteer, partner, or sponsor a distribution day.</p>
+        <a href="mailto:stogie@pittsburghrr.org" style="display:inline-block;padding:14px 24px;border:1px solid #575550;color:#f2f0ec;font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase" style-hover="border-color:#e8b338;color:#e8b338">Email Us</a>
+      </div>
+    </div>
+    <div style="max-width:1240px;margin:64px auto 0;padding-top:24px;border-top:1px solid #1c1c1f;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:12px;color:#6d6a65">
+      <span>© 2026 Pittsburgh Ruff Ryders Inc. All rights reserved. EIN 87-4140820. Contributions are tax-deductible to the extent allowed by law.</span>
+      <span>www.pittsburghrr.org</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+</body>
+</html>
