@@ -1,8 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pittsburgh Ruff Ryders | 501(c)(3) Nonprofit Serving Pittsburgh</title>
+<meta name="description" content="Pittsburgh Ruff Ryders is an all-volunteer 501(c)(3) nonprofit uniting Pittsburgh youth and families through free meals, winter care packages, preventive health access, and safe recreation across Allegheny County.">
+<link rel="canonical" href="https://www.pittsburghrr.org/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pittsburgh Ruff Ryders">
+<meta property="og:title" content="Pittsburgh Ruff Ryders | 501(c)(3) Nonprofit Serving Pittsburgh">
+<meta property="og:description" content="All-volunteer 501(c)(3) nonprofit uniting Pittsburgh youth and families through free meals, winter care packages, preventive health access, and safe recreation.">
+<meta property="og:url" content="https://www.pittsburghrr.org/">
+<meta property="og:image" content="https://www.pittsburghrr.org/assets/hero-overlook.jpg">
+<meta property="og:image:alt" content="Pittsburgh Ruff Ryders members overlooking downtown Pittsburgh">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pittsburgh Ruff Ryders | 501(c)(3) Nonprofit Serving Pittsburgh">
+<meta name="twitter:description" content="All-volunteer 501(c)(3) nonprofit uniting Pittsburgh youth and families through free meals, winter care, health access, and safe recreation.">
+<meta name="twitter:image" content="https://www.pittsburghrr.org/assets/hero-overlook.jpg">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XCKRQKNQB"></script>
 <script>
@@ -25,13 +41,40 @@
   a { color: #e8b338; text-decoration: none; }
   a:hover { color: #ffd479; }
   ::selection { background: #e8b338; color: #0b0b0c; }
+  html { scroll-behavior: smooth; }
+  img { max-width: 100%; }
+
+  /* Inline styles carry higher specificity, so mobile overrides need !important. */
+  @media (max-width: 900px) {
+    header { padding: 12px 18px !important; gap: 12px !important; }
+    header nav { gap: 15px !important; flex-wrap: wrap !important; justify-content: flex-end !important; row-gap: 8px !important; }
+    header nav a { font-size: 11px !important; letter-spacing: 0.08em !important; }
+    header nav a:last-child { padding: 9px 15px !important; }
+    h1 { font-size: 44px !important; }
+    h2 { font-size: 30px !important; }
+    h3 { font-size: 17px !important; }
+    section { padding: 64px 18px !important; }
+    footer { padding: 64px 18px 40px !important; }
+    [style*="display:flex"] { flex-wrap: wrap !important; }
+    [style*="grid-template-columns"] { grid-template-columns: 1fr !important; gap: 26px !important; }
+    [style*="min-height:640px"] { min-height: 430px !important; }
+    [style*="padding:0 40px 72px"] { padding: 0 18px 44px !important; }
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 34px !important; }
+    h2 { font-size: 25px !important; }
+    section { padding: 52px 16px !important; }
+    footer { padding: 52px 16px 36px !important; }
+    [style*="padding:0 40px 72px"] { padding: 0 16px 38px !important; }
+  }
 </style>
 </helmet>
 <div style="background:#0b0b0c;color:#f2f0ec;font-family:Archivo,Helvetica,Arial,sans-serif;min-height:100vh">
 
   <header style="position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 40px;background:rgba(11,11,12,0.86);backdrop-filter:blur(12px);border-bottom:1px solid #232326">
     <div style="display:flex;align-items:center;gap:14px">
-      <img src="assets/rr-logo.webp" alt="Pittsburgh Ruff Ryders logo" style="width:46px;height:46px;object-fit:contain" />
+      <img src="assets/rr-logo.webp" alt="Pittsburgh Ruff Ryders logo" style="width:46px;height:46px;object-fit:contain" decoding="async" />
       <div style="display:flex;flex-direction:column;line-height:1.15">
         <span style="font-family:'Archivo Black',Archivo,sans-serif;font-size:15px;letter-spacing:0.14em;text-transform:uppercase">Ruff Ryders</span>
         <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#8e8b84">Pittsburgh, PA</span>
@@ -48,7 +91,7 @@
   </header>
 
   <section style="position:relative;min-height:640px;display:flex;align-items:flex-end;overflow:hidden">
-    <img src="assets/hero-overlook.jpg" alt="Pittsburgh Ruff Ryders members overlooking downtown Pittsburgh" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%" />
+    <img src="assets/hero-overlook.jpg" alt="Pittsburgh Ruff Ryders members overlooking downtown Pittsburgh" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%" fetchpriority="high" decoding="async" />
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,0.78) 0%,rgba(11,11,12,0.5) 34%,rgba(11,11,12,0.88) 68%,rgba(11,11,12,0.97) 100%)"></div>
     <div style="position:relative;padding:0 40px 72px;max-width:1000px">
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:22px">
@@ -68,7 +111,7 @@
     <div style="display:grid;grid-template-columns:minmax(220px,300px) minmax(0,1fr);gap:72px;align-items:start;max-width:1240px;margin:0 auto">
       <div>
         <div style="font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#e8b338;margin-bottom:16px">Who We Are</div>
-        <img src="assets/rr-logo.webp" alt="" style="width:132px;height:132px;object-fit:contain;opacity:0.9" />
+        <img src="assets/rr-logo.webp" alt="" style="width:132px;height:132px;object-fit:contain;opacity:0.9" decoding="async" />
       </div>
       <div>
         <h2 style="margin:0 0 32px;font-family:'Archivo Black',Archivo,sans-serif;font-size:54px;line-height:1.02;letter-spacing:-0.015em;text-transform:uppercase;max-width:14ch">Built by the Community, for the Community</h2>
@@ -142,7 +185,7 @@
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:#232326">
         <article style="background:#111113;display:flex;flex-direction:column">
-          <img src="assets/cookout-2026.jpg" alt="Pittsburgh Ruff Ryders Community Cookout flier, Saturday July 18 2026, 12 PM to 5 PM, Riverview Park" style="width:100%;height:auto;display:block" />
+          <img src="assets/cookout-2026.jpg" alt="Pittsburgh Ruff Ryders Community Cookout flier, Saturday July 18 2026, 12 PM to 5 PM, Riverview Park" style="width:100%;height:auto;display:block" loading="lazy" decoding="async" />
           <div style="padding:28px 26px 32px;display:flex;flex-direction:column;gap:12px">
             <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#e8b338">July 18, 2026</div>
             <h3 style="margin:0;font-size:21px;font-weight:700">Community Cookout</h3>
@@ -150,7 +193,7 @@
           </div>
         </article>
         <article style="background:#111113;display:flex;flex-direction:column">
-          <img src="assets/bookbag-2026.jpg" alt="2026 Back to School Book Bag Giveaway flier, August 15, 12 PM to 5 PM, parking lot next to 312 Ringgold St" style="width:100%;height:auto;display:block" />
+          <img src="assets/bookbag-2026.jpg" alt="2026 Back to School Book Bag Giveaway flier, August 15, 12 PM to 5 PM, parking lot next to 312 Ringgold St" style="width:100%;height:auto;display:block" loading="lazy" decoding="async" />
           <div style="padding:28px 26px 32px;display:flex;flex-direction:column;gap:12px">
             <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#e8b338">August 15, 2026</div>
             <h3 style="margin:0;font-size:21px;font-weight:700">Back to School Book Bag Giveaway</h3>
@@ -158,7 +201,7 @@
           </div>
         </article>
         <article style="background:#111113;display:flex;flex-direction:column">
-          <img src="assets/backpack-giveaway.jpg" alt="Pittsburgh Ruff Ryders Backpack Giveaway flier, Sept 14, 11A until the last backpack, West Park, 638 W Ohio St 15212" style="width:100%;height:auto;display:block" />
+          <img src="assets/backpack-giveaway.jpg" alt="Pittsburgh Ruff Ryders Backpack Giveaway flier, Sept 14, 11A until the last backpack, West Park, 638 W Ohio St 15212" style="width:100%;height:auto;display:block" loading="lazy" decoding="async" />
           <div style="padding:28px 26px 32px;display:flex;flex-direction:column;gap:12px">
             <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#e8b338">September 14, 2025</div>
             <h3 style="margin:0;font-size:21px;font-weight:700">Backpack Giveaway</h3>
@@ -179,27 +222,27 @@
       <h2 style="margin:0 0 48px;font-family:'Archivo Black',Archivo,sans-serif;font-size:54px;line-height:1.02;letter-spacing:-0.015em;text-transform:uppercase">Out in the City</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
         <figure style="grid-column:span 2;margin:0;display:flex;flex-direction:column;gap:10px">
-          <div style="aspect-ratio:16/10;overflow:hidden;background:#111113"><img src="assets/handoff.jpg" alt="A volunteer hands a care package to a man downtown at night" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%" /></div>
+          <div style="aspect-ratio:16/10;overflow:hidden;background:#111113"><img src="assets/handoff.jpg" alt="A volunteer hands a care package to a man downtown at night" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%" loading="lazy" decoding="async" /></div>
           <figcaption style="font-size:13px;color:#8e8b84">Handing out care packages downtown after dark.</figcaption>
         </figure>
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
-          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/light-of-life.jpg" alt="Volunteers carrying donations into Light of Life Rescue Mission" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/light-of-life.jpg" alt="Volunteers carrying donations into Light of Life Rescue Mission" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async" /></div>
           <figcaption style="font-size:13px;color:#8e8b84">Delivering donations to Light of Life Rescue Mission.</figcaption>
         </figure>
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
-          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/packing.jpg" alt="A volunteer filling drawstring bags with supplies" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/packing.jpg" alt="A volunteer filling drawstring bags with supplies" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async" /></div>
           <figcaption style="font-size:13px;color:#8e8b84">Packing bags before a distribution night.</figcaption>
         </figure>
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
-          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/trunk.jpg" alt="Volunteers unloading supplies from a car on a downtown street" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/trunk.jpg" alt="Volunteers unloading supplies from a car on a downtown street" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async" /></div>
           <figcaption style="font-size:13px;color:#8e8b84">Unloading supplies on the street.</figcaption>
         </figure>
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
-          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/street-line.jpg" alt="People gathering on a downtown Pittsburgh sidewalk to receive supplies" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/street-line.jpg" alt="People gathering on a downtown Pittsburgh sidewalk to receive supplies" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async" /></div>
           <figcaption style="font-size:13px;color:#8e8b84">Neighbors gathering on Smithfield Street.</figcaption>
         </figure>
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
-          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/ride.jpg" alt="Riders lined up on motorcycles in downtown Pittsburgh" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%" /></div>
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#111113"><img src="assets/ride.jpg" alt="Riders lined up on motorcycles in downtown Pittsburgh" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%" loading="lazy" decoding="async" /></div>
           <figcaption style="font-size:13px;color:#8e8b84">Riding out through downtown.</figcaption>
         </figure>
       </div>
@@ -286,7 +329,7 @@
   <footer id="contact" style="padding:100px 40px 48px">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:56px;max-width:1240px;margin:0 auto">
       <div>
-        <img src="assets/rr-logo.webp" alt="Pittsburgh Ruff Ryders logo" style="width:64px;height:64px;object-fit:contain;margin-bottom:20px" />
+        <img src="assets/rr-logo.webp" alt="Pittsburgh Ruff Ryders logo" style="width:64px;height:64px;object-fit:contain;margin-bottom:20px" decoding="async" />
         <div style="font-family:'Archivo Black',Archivo,sans-serif;font-size:17px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px">Pittsburgh Ruff Ryders</div>
         <div style="font-size:14px;line-height:1.7;color:#8e8b84">Pittsburgh Ruff Ryders Inc.<br />A Pennsylvania nonprofit corporation<br />501(c)(3) tax-exempt charitable organization</div>
       </div>
