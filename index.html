@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=BAANIhtefj0QDE2EP9VyB9AoFt9zQwFBm5y3sROEMpN_bFkKvs68p2wmrDy27mnJP_rKUyFCgRjncO9ipI&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
 </head>
 <body>
 <x-dc>
@@ -212,9 +213,9 @@
       </div>
       <div style="display:flex;flex-direction:column;gap:14px">
         <div style="font-size:16px;line-height:1.6;color:#3d2f0b">Most gifts run $25 to $100. Any amount is welcome, and so are in-kind donations of coats, hats, gloves, socks, and hygiene supplies.</div>
+        <div id="paypal-container-362M4BH58JMUA" style="min-height:52px"></div>
         <a href="mailto:stogie@pittsburghrr.org?subject=Donation%20to%20Pittsburgh%20Ruff%20Ryders" style="padding:19px 32px;background:#0b0b0c;color:#e8b338;text-align:center;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase" style-hover="background:#232326">Email Us to Give</a>
         <div style="padding:14px 16px;border:1px solid #0b0b0c;font-size:15px;line-height:1.6">Cash App: <strong>@ruffryders412</strong></div>
-        <div style="border:1px dashed #8a6c17;padding:14px 16px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;line-height:1.6;color:#5c4610">PLACEHOLDER — send a donation-page link (PayPal Giving Fund, Givebutter, Zeffy) and I'll wire the Give Now button to it. Verify the Cash App handle format before publishing.</div>
       </div>
     </div>
   </section>
@@ -271,7 +272,7 @@
           <p style="margin:0;font-size:15px;line-height:1.7;color:#a8a5a0;text-wrap:pretty">Write to <a href="mailto:stogie@pittsburghrr.org">stogie@pittsburghrr.org</a> at any time to request a copy of what we hold about you, correct it, unsubscribe, or have it deleted. This site is not directed to children under 13, and we do not knowingly collect their information.</p>
         </div>
       </div>
-      <div style="margin-top:32px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:#6d6a65">Last updated: PLACEHOLDER — set the date this policy is published.</div>
+      <div style="margin-top:32px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:#6d6a65">Last updated: September 13, 2026</div>
     </div>
   </section>
 
@@ -316,5 +317,20 @@
   </footer>
 </div>
 </x-dc>
+<script>
+(function () {
+  var id = '362M4BH58JMUA';
+  var sel = '#paypal-container-' + id;
+  var rendered = null, tries = 0;
+  var timer = setInterval(function () {
+    if (++tries > 300) return clearInterval(timer);
+    var el = document.querySelector(sel);
+    if (!el || rendered === el) return;
+    if (!window.paypal || !window.paypal.HostedButtons) return;
+    rendered = el;
+    try { paypal.HostedButtons({ hostedButtonId: id }).render(sel); } catch (e) { rendered = null; }
+  }, 100);
+})();
+</script>
 </body>
 </html>
