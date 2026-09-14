@@ -382,5 +382,42 @@
   }, 100);
 })();
 </script>
+<script>
+/* GA4 conversion events. PayPal renders a cross-origin iframe, so its clicks
+   cannot be observed directly; they are inferred from focus moving into it. */
+(function () {
+  var PAYPAL_CONTAINER = 'paypal-container-362M4BH58JMUA';
+  var last = {};
+
+  function track(name, params) {
+    if (typeof window.gtag !== 'function') return;
+    var now = Date.now();
+    if (last[name] && now - last[name] < 1500) return;
+    last[name] = now;
+    window.gtag('event', name, params || {});
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var label = (a.textContent || '').trim().slice(0, 60);
+    if (href.slice(0, 7) === 'mailto:') {
+      track(/donation/i.test(href) ? 'donate_email_click' : 'email_click', { link_text: label });
+    } else if (href.slice(0, 4) === 'tel:') {
+      track('phone_click', { link_text: label });
+    } else if (href === '#donate') {
+      track('donate_intent', { link_text: label });
+    }
+  }, true);
+
+  window.addEventListener('blur', function () {
+    var el = document.activeElement;
+    if (!el || el.tagName !== 'IFRAME') return;
+    var c = document.getElementById(PAYPAL_CONTAINER);
+    if (c && c.contains(el)) track('donate_click', { method: 'paypal' });
+  });
+})();
+</script>
 </body>
 </html>
